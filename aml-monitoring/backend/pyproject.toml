@@ -1,0 +1,9 @@
+[tool.ruff]
+line-length   = 110
+target-version = "py311"
+select         = ["E", "F", "I", "N", "W"]
+ignore         = ["E501", "N999", "W291"]
+
+[tool.pytest.ini_options]
+testpaths  = ["app/tests"]
+pythonpath = ["."]
